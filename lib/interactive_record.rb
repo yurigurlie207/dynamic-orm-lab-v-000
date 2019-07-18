@@ -6,7 +6,7 @@ class InteractiveRecord
   def self.table_name
     "#{self.to_s.downcase}s"
   end
-  
+
   def initialize(options={})
    options.each do |property, value|
      self.send("#{property}=", value)
