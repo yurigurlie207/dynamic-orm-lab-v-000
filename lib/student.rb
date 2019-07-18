@@ -10,5 +10,6 @@ class Student < InteractiveRecord
 
   self.column_names.each do |column_name|
     attr_accessor col_name.to_sym
+  end
 
 end
